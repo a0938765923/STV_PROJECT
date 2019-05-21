@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.7.3 on win32)" generated="20190520 14:00:50.213" rpa="false">
+<suite id="s1" name="TEST" source="C:\Users\mark\Desktop\RED_0.8.11.20190131133900-win32.win32.x86_64\workspace\TEST">
+<suite id="s1-s1" name="Test" source="C:\Users\mark\Desktop\RED_0.8.11.20190131133900-win32.win32.x86_64\workspace\TEST\test.robot">
+<test id="s1-s1-t1" name="TC-23">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=6.0</arg>
+<arg>deviceName=HT4C8WM01683</arg>
+<arg>appPackage=jp.united.app.kanahei.money</arg>
+<arg>appActivity=jp.united.app.kanahei.money.controller.TopActivity</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" starttime="20190520 14:00:50.535" endtime="20190520 14:01:05.898"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@text='履歷']</arg>
+</arguments>
+<msg timestamp="20190520 14:01:05.903" level="INFO">Clicking element 'xpath=//*[@text='履歷']'.</msg>
+<status status="PASS" starttime="20190520 14:01:05.900" endtime="20190520 14:01:06.462"></status>
+</kw>
+<kw name="Click Element Until It Is Visible">
+<arguments>
+<arg>xpath=//android.widget.ImageView[@resource-id='jp.united.app.kanahei.money:id/imageView']</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190520 14:01:07.281" level="INFO">Current page contains element 'xpath=//android.widget.ImageView[@resource-id='jp.united.app.kanahei.money:id/imageView']'.</msg>
+<status status="PASS" starttime="20190520 14:01:06.463" endtime="20190520 14:01:07.281"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190520 14:01:07.282" endtime="20190520 14:01:07.438"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190520 14:01:07.440" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@resource-id='jp.united.app.kanahei.money:id/imageView']'.</msg>
+<status status="PASS" starttime="20190520 14:01:07.439" endtime="20190520 14:01:07.993"></status>
+</kw>
+<status status="PASS" starttime="20190520 14:01:06.462" endtime="20190520 14:01:07.994"></status>
+</kw>
+<kw name="Click Element Until It Is Visible">
+<arguments>
+<arg>xpath=//*[@index='2']//android.widget.TextView[@text='￥ 50']</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190520 14:01:08.235" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;hierarchy rotation="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,1776]" resource-id="" instance="0"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,1776]" resource-id="" instance="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,1776]" resource-id="android:id/content" instance="1"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,1776]" resource-id="" instance="1"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,0][1080,177]" resource-id="" instance="2"&gt;&lt;android.widget.TextView index="0" text="總覽" class="android.widget.TextView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[480,48][600,129]" resource-id="jp.united.app.kanahei.money:id/view15" instance="0"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.ScrollView index="1" text="" class="android.widget.ScrollView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,177][1080,564]" resource-id="jp.united.app.kanahei.money:id/scroll" instance="0"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,177][1080,564]" resource-id="jp.united.app.kanahei.money:id/linearLayout2" instance="2"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,177][1080,273]" resource-id="jp.united.app.kanahei.money:id/linearLayout" instance="3"&gt;&lt;android.widget.TextView index="0" text="2019/5/20(週一)" class="android.widget.TextView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,184][498,265]" resource-id="jp.united.app.kanahei.money:id/date" instance="1"/&gt;&lt;android.widget.TextView index="1" text="￥ 50" class="android.widget.TextView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[889,184][1080,265]" resource-id="jp.united.app.kanahei.money:id/amount" instance="2"/&gt;&lt;/android.widget.FrameLayout&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,273][1080,547]" resource-id="jp.united.app.kanahei.money:id/list" instance="3"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,273][1080,547]" resource-id="" instance="4"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,285][1080,535]" resource-id="" instance="5"&gt;&lt;android.widget.ImageView index="0" text="" class="android.widget.ImageView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[48,290][288,530]" resource-id="jp.united.app.kanahei.money:id/image" instance="0"/&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[288,285][1080,535]" resource-id="" instance="6"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[288,285][1080,414]" resource-id="" instance="7"&gt;&lt;android.widget.TextView index="0" text="￥ 50" class="android.widget.TextView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[288,285][1080,414]" resource-id="jp.united.app.kanahei.money:id/amount" instance="3"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.TextView index="1" text="" class="android.widget.TextView" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[288,414][336,535]" resource-id="jp.united.app.kanahei.money:id/memo" instance="4"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.FrameLayout index="2" text="" class="android.widget.FrameLayout" package="jp.united.app.kanahei.money" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[0,547][1080,564]" resource-id="" instance="4"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.ScrollView&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20190520 14:01:11.124" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190520 14:01:08.236" endtime="20190520 14:01:11.125"></status>
+</kw>
+<msg timestamp="20190520 14:01:11.126" level="FAIL">Page should have contained element 'xpath=//*[@index='2']//android.widget.TextView[@text='￥ 50']' but did not</msg>
+<status status="FAIL" starttime="20190520 14:01:07.995" endtime="20190520 14:01:11.126"></status>
+</kw>
+<status status="FAIL" starttime="20190520 14:01:07.994" endtime="20190520 14:01:11.126"></status>
+</kw>
+<status status="FAIL" starttime="20190520 14:00:50.534" endtime="20190520 14:01:11.126" critical="yes">Page should have contained element 'xpath=//*[@index='2']//android.widget.TextView[@text='￥ 50']' but did not</status>
+</test>
+<status status="FAIL" starttime="20190520 14:00:50.266" endtime="20190520 14:01:11.127"></status>
+</suite>
+<status status="FAIL" starttime="20190520 14:00:50.246" endtime="20190520 14:01:11.129"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TEST">TEST</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Test">TEST.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
